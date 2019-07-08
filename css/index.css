@@ -1,0 +1,596 @@
+@charset "UTF-8";
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Microsoft YaHei;
+}
+
+.inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*banner*/
+.im_mo{display: none;}
+.im_pc{display: block;}
+
+
+#banner .swiper-container-horizontal>.swiper-pagination{
+    padding:0 3%;
+    bottom:5%;
+}
+#banner .swiper-pagination-clickable .swiper-pagination-bullet{
+    display: inline-block;
+    width: 10px;
+    height:10px;
+    margin-left: 8px;
+    background-color:#fff;
+    /*border: 1px solid #fff;*/
+    transition: transform .2s;
+    cursor: pointer;
+    opacity: 1;
+    border-radius: 50%;
+}
+#banner .swiper-pagination-bullets{
+    padding:0 30px;
+    bottom: 20px;
+}
+#banner .swiper-pagination-clickable .swiper-pagination-bullet-active{
+    background-color:#ec6941;
+}
+#banner .swiper-button-prev,#banner .swiper-button-next{
+    width: 10px;
+    height:10px;
+    top: 50%;
+    position: absolute;
+    margin-top: -21px;
+}
+#banner .swiper-button-prev{
+    left: 60px;
+    background: url(../images/index/left_click.png) no-repeat;
+}
+#banner .swiper-button-next{
+    right: 60px;
+    background: url(../images/index/right_click.png) no-repeat;
+}
+/*瑞恩精选*/
+.rejs{
+    background: #fafafa;
+    width:100%;
+    min-height:600px;
+}
+.rejs-nr h1{
+    font-family: '宋体';
+    padding:60px 0 30px 0;
+    font-size: 32px;
+    font-weight: bold;
+    color:#333333;
+    text-align: center;
+}
+.rejs-nr .rejs-nr-top{
+    width: 80%;
+    margin:0 auto;
+}
+.rejs-nr .rejs-nr-top p{
+    text-align: justify;
+    font-size: 14px;
+    color:#666;
+    line-height: 26px;
+    margin-bottom: 15px;
+}
+.rejs-nr .rejs-nr-bottom{
+    margin-top:60px;
+}
+.rejs-nr-bottom ul:after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.rejs-nr .rejs-nr-bottom ul li{
+    float: left;
+    width:25%;
+    padding:10px;
+    text-align: center;
+}
+.rejs-nr .rejs-nr-bottom ul li a{
+    width: 200px;
+    height: 100%;
+    text-align: center;
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.rejs-nr .rejs-nr-bottom ul li img{
+    width:200px;
+    height:220px;
+    transition: all linear 0.5s;
+    -webkit-transition: all linear 0.5s;
+    -moz-transition: all linear 0.5s;
+}
+.rejs-nr .rejs-nr-bottom ul li a:hover img{
+    transform: scale(1.06);
+    transition: all linear 0.5s;
+    -webkit-transition: all linear 0.5s;
+    -moz-transition: all linear 0.5s;
+}
+.shipin{
+    width:100%;
+    height:auto;
+    overflow: hidden;
+}
+.shipin video{
+    object-fit: fill;
+    width:100%;
+    height:100%;
+}
+/*.fashion{*/
+    /*background: url(../image/zhuli.jpg) no-repeat;*/
+    /*background-size: 100% 100%;*/
+    /*background-position: left center;*/
+    /*height:985px;*/
+/*}*/
+.fashion{
+    position: relative;
+}
+.fashion>img{
+    width: 100%;
+    max-height:985px;
+}
+.fashion .fashion-nr{
+    /*border: 1px solid;*/
+    position: absolute;
+    padding: 150px 0 0 0;
+    top: 0;
+    left: 18%;
+    width: 30%;
+    height: 100%;
+}
+.fashion .fashion-nr h1{
+    color:#284b7f;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.fashion .fashion-nr p{
+    color:#666666;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: justify;
+}
+.fashion .fashion-nr>a{
+    display: block;
+    border:1px solid #333;
+    text-align: center;
+    font-size: 14px;
+    width:120px;
+    padding: 5px 0;
+    margin-top:30px;
+}
+.lunbo{
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin-top: 35px;
+}
+#jewelry{
+    width: 100%;
+    margin:30px auto;
+}
+#jewelry a{
+    display: block;
+    width:100%;
+}
+#jewelry a ul:after{
+    content:"";
+    display: block;
+    clear: both;
+}
+#jewelry a ul li{
+    display: inline-block;
+    width: 33%;
+    float: left;
+    padding:0 10px;
+    /*height: auto;*/
+    /*border:1px solid;*/
+    height:121px;
+}
+#jewelry a ul li img{
+    width: 100px;
+    height:120px;
+    margin:0 auto;
+}
+#jewelry .swiper-button-prev{
+    /*left: 60px;*/
+    background: url(../image/lt.png) no-repeat;
+}
+#jewelry .swiper-button-next{
+    /*right: 60px;*/
+    background: url(../image/rt.png) no-repeat;
+}
+
+/*永恒印记*/
+.yhyj{
+    position: relative;
+}
+.yhyj img{
+    width:100%;
+}
+.yhyj-nr{
+    position: absolute;
+    /*padding: 150px 0 0 0;*/
+    top: 32%;
+    right: 13%;
+    width: 20%;
+    /*height: 100%;*/
+}
+.yhyj-nr h1{
+    font-family: '宋体';
+    color:#ffffff;
+    font-size:22px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.yhyj-nr p{
+    color:#ffffff;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: justify;
+}
+.yhyj-nr a{
+    display: block;
+    width: 120px;
+    text-align: center;
+    padding:5px 0;
+    border: 1px solid #fff;
+    font-size: 14px;
+    color:#fff;
+    margin: 30px  auto 0;
+}
+
+/* 公司介绍 */
+.gs ul {
+    width: 100%;
+    overflow: hidden;
+}
+
+.gs ul li {
+    float: left;
+    position: relative;
+    width: 25%;
+    overflow: hidden;
+}
+.gs-im {
+    width: 100%;
+}
+
+.gs-im img {
+    width: 100%;
+    transition: all linear .25s;
+    -webkit-transition: all linear .25s;
+}
+
+.gs-txt {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30%;
+    text-align: center;
+    transition: all linear .25s;
+    -webkit-transition: all linear .25s;
+}
+
+.gs-txt span {
+    font-size: 42px;
+    color: #c8000a;
+}
+
+.gs-txt h3 {
+    font-size: 32px;
+    color: #fff;
+    text-shadow: -5px 5px 8px rgba(0, 0, 0, 0.5);
+    padding: 30px 0;
+}
+
+.gs-txt h3 i {
+    font-size: 18px;
+    font-style: normal;
+}
+
+.gs-txt b {
+    display: block;
+    width: 28px;
+    height: 4px;
+    background-color: #fff;
+    margin: 0 auto 30px;
+    transition: all linear .25s;
+    -webkit-transition: all linear .25s;
+}
+
+.gs-txt a {
+    display: block;
+    width: 90px;
+    height: 30px;
+    border-radius: 10px;
+    background: #ff3841;
+    box-shadow: 0 0 8px rgba(255, 56, 65, 0.3);
+    background: -moz-linear-gradient(top, #ff3841 0%, #da0716 100%);
+    background: -webkit-gradient(linear, top left, top right, color-stop(0%, #ff3841), color-stop(100%, #da0716));
+    background: -webkit-linear-gradient(top, #ff3841 0%, #da0716 100%);
+    background: -o-linear-gradient(top, #ff3841 0%, #da0716 100%);
+    background: -ms-linear-gradient(top, #ff3841 0%, #da0716 100%);
+    background: linear-gradient(to bottom, #ff3841 0%, #da0716 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3841', endColorstr='#da0716', GradientType=0);
+    color: #fff;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0 auto;
+    opacity: 0;
+    transition: all linear .25s;
+    -webkit-transition: all linear .25s;
+}
+
+.gs-ph {
+    display: none;
+}
+
+.map-ph {
+    display: none;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .inner{
+        width: 1024px;
+    }
+    .gs-txt h3 {
+        font-size: 22px;
+        padding: 15px 0;
+    }
+
+    .gs-txt h3 i {
+        font-size: 14px;
+    }
+    .fashion .fashion-nr {
+        padding: 40px 0 0 0;
+        left: 10%;
+        width: 50%;
+        height: auto;
+    }
+    .yhyj-nr {
+        position: absolute;
+        top: 25%;
+        width: 25%;
+    }
+
+}
+@media screen and (min-width: 1024px){
+    .gs ul li:hover .gs-txt a {
+        opacity: 1;
+    }
+
+    .gs ul li:hover .gs-im img {
+        transform: scale(1.05, 1.05);
+        -webkit-transform: scale(1.05, 1.05);
+    }
+
+    .gs ul li:hover .gs-txt b {
+        background-color: #c8000a;
+    }
+
+    .gs ul li:hover .gs-txt {
+        top: 27%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .inner{
+        width: 100%;
+    }
+    #banner .swiper-pagination-clickable .swiper-pagination-bullet{
+        width: 10px;
+        height: 10px;
+    }
+    #banner .swiper-pagination-bullets{
+        bottom: 10px;
+    }
+    #banner .swiper-button-prev{
+        left: 15px;
+        display: none;
+    }
+    #banner .swiper-button-next{
+        right: 15px;
+        display: none;
+    }
+    .rejs-nr .rejs-nr-bottom ul li a {
+        width: 150px;
+    }
+    .rejs-nr .rejs-nr-bottom ul li img {
+        width: 150px;
+        height: 160px;
+    }
+    .fashion .fashion-nr {
+        padding: 15px;
+        left: 0%;
+        width: 100%;
+        height: auto;
+    }
+    .fashion .fashion-nr p {
+        line-height: 26px;
+    }
+    .fashion .fashion-nr>a {
+        margin-top: 15px;
+    }
+    #jewelry {
+        width: 100%;
+        margin: 30px auto 0;
+    }
+    .lunbo{
+        margin-top:0;
+    }
+    .yhyj-nr {
+        right: 10%;
+        position: absolute;
+        top: 20%;
+        width: 40%;
+    }
+
+}
+@media screen and (max-width: 768px){
+    .im_mo{display: block;height: 250px;}
+    .im_pc{display: none;}
+
+    .gs {
+        padding-bottom: 30px;
+        background-color: #f5f5f5;
+    }
+    .gs ul {
+        display: none;
+    }
+
+    .gs-ph {
+        display: block;
+        width: 100%;
+    }
+    .gs-box {
+        position: relative;
+        width: 95%;
+        margin: 0 2%;
+        padding: 25px 60px;
+    }
+    .gs-im img {
+        width: 236px;
+        height: 371px;
+    }
+    .swiper-slide-active .gs-txt {
+        top: 30%;
+    }
+    .gs{
+        padding-bottom: 0;
+    }
+    .gs-txt a {
+        opacity: 0;
+    }
+
+    .swiper-slide-active .gs-txt a {
+        opacity: 1;
+    }
+
+    .swiper-slide-active .gs-txt b {
+        background-color: #cc040e;
+    }
+    .rejs-nr h1 {
+        padding: 20px 0 20px 0;
+        font-size: 25px;
+    }
+    .rejs-nr .rejs-nr-top {
+        padding: 0 10px;
+        width: 100%;
+    }
+    .rejs-nr .rejs-nr-bottom {
+         margin-top: 0;
+    }
+    .rejs-nr .rejs-nr-bottom ul li {
+        float: left;
+        width: 50%;
+    }
+    .rejs-nr .rejs-nr-bottom ul li img {
+        width: 100px;
+        height: 110px;
+    }
+    .rejs{
+        min-height: 575px;
+    }
+    .shipin{
+        height: 250px;
+    }
+    .fashion .fashion-nr{
+        position: unset;
+    }
+    .fashion .fashion-nr>a {
+        color: #666;
+        border: 1px solid #666;
+    }
+
+    .fashion .fashion-nr h1 {
+        text-align: center;
+    }
+    .fashion>img {
+        width: 100%;
+        height: 192px;
+    }
+    #jewelry a ul li img {
+        width: 90px;
+        height: 110px;
+        margin: 0 auto;
+    }
+    #jewelry .swiper-button-prev {
+        left: 0;
+    }
+    #jewelry .swiper-button-next {
+        right: -5px;
+    }
+    .yhyj img {
+        width: 100%;
+        height: 192px;
+    }
+    .yhyj-nr {
+        position: unset;
+        width: 100%;
+        padding:0 10px;
+    }
+    .yhyj-nr h1 {
+        color: #666;
+        margin:15px auto;
+    }
+    .yhyj-nr p {
+        color: #666;
+    }
+    .yhyj-nr a{
+        color:#666;
+        border:1px solid #666;
+        margin:20px auto;
+    }
+    .footer{
+        height:140px;
+    }
+    .footer .foot_left {
+        padding: 20px 15px;
+        width: 100%;
+        margin: 0;
+    }
+    .footer .foot_center {
+        display: none;
+    }
+    .footer .foot_right {
+        display: none;
+    }
+    .footer .foot_bottom {
+        line-height: 25px;
+        font-size: 15px;
+        margin-top:0;
+    }
+}
+
+@keyframes right_arrow_flash {
+    0% {
+        right: 75px;
+        opacity: 1.0;
+    }
+    100% {
+        right: 55px;
+        opacity: 0.2;
+    }
+}
+@keyframes left_arrow_flash {
+    0% {
+        left: 75px;
+        opacity: 1.0;
+    }
+    100% {
+        left: 55px;
+        opacity: 0.2;
+    }
+}
+
+
